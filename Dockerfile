@@ -12,7 +12,7 @@ COPY . ./
 
 # Install production dependencies.
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 RUN pip install Flask gunicorn
 
 # Run the web service on container startup. Here we use the gunicorn
